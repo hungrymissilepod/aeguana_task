@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:flutter_app_template/ui/common/app_colors.dart';
-import 'package:flutter_app_template/ui/common/ui_helpers.dart';
 
 import 'home_viewmodel.dart';
 
@@ -24,7 +22,6 @@ class HomeView extends StackedView<HomeViewModel> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                verticalSpaceLarge,
                 Column(
                   children: [
                     const Text(
@@ -34,7 +31,6 @@ class HomeView extends StackedView<HomeViewModel> {
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    verticalSpaceMedium,
                     MaterialButton(
                       color: Colors.black,
                       onPressed: viewModel.incrementCounter,
@@ -45,31 +41,6 @@ class HomeView extends StackedView<HomeViewModel> {
                     ),
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    MaterialButton(
-                      color: kcDarkGreyColor,
-                      onPressed: viewModel.showDialog,
-                      child: const Text(
-                        'Show Dialog',
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    MaterialButton(
-                      color: kcDarkGreyColor,
-                      onPressed: viewModel.showBottomSheet,
-                      child: const Text(
-                        'Show Bottom Sheet',
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ],
-                )
               ],
             ),
           ),
