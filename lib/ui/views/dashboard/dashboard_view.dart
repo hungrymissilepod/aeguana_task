@@ -1,5 +1,6 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app_template/ui/views/account/account_view.dart';
 import 'package:flutter_app_template/ui/views/dashboard/ui/app_bar_leading.dart';
 import 'package:flutter_app_template/ui/views/dashboard/ui/bottom_nav_bar_icon.dart';
 import 'package:flutter_app_template/ui/views/home/home_view.dart';
@@ -24,17 +25,11 @@ class DashboardView extends StackedView<DashboardViewModel> {
         centerTitle: true,
         elevation: 0,
         backgroundColor: const Color(0xFF349ED5),
-        titleTextStyle: const TextStyle(
-          color: Color(0xFF0A0F0F),
-          fontWeight: FontWeight.w400,
-          fontSize: 18,
-        ),
         leading: const AppBarLeading(),
         title: Text(
           viewModel.appBarTitle,
           style: const TextStyle(
-            fontFamily: 'Futura',
-            fontSize: 16,
+            fontSize: 18,
             fontWeight: FontWeight.w400,
             color: Color(0xFF0A0F0F),
           ),
@@ -45,7 +40,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
         children: const <Widget>[
           HomeView(),
           PayView(),
-          Center(child: Text('profile')),
+          AccountView(),
         ],
         onPageChanged: (int index) {
           viewModel.onPageViewSwipe(index);

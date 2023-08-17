@@ -29,7 +29,8 @@ class DashboardViewModel extends BaseViewModel {
   }
 
   void _animateToPage() {
-    controller.animateToPage(currentIndex, duration: const Duration(milliseconds: 200), curve: Curves.easeInOut);
+    controller.animateToPage(currentIndex,
+        duration: const Duration(milliseconds: 200), curve: Curves.easeInOut);
     rebuildUi();
   }
 

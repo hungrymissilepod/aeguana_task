@@ -4,13 +4,16 @@ class LaunchTextField extends StatelessWidget {
   const LaunchTextField({
     super.key,
     required this.hint,
+    required this.keyboardType,
   });
 
   final String hint;
+  final TextInputType keyboardType;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      keyboardType: keyboardType,
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: const TextStyle(
