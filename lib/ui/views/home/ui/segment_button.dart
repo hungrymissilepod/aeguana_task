@@ -20,7 +20,9 @@ class SegmentButton extends ViewModelWidget<HomeViewModel> {
         fontFamily: 'Futura',
         fontSize: 14,
         fontWeight: FontWeight.w400,
-        color: index == viewModel.currentSection ? Colors.black : const Color(0xFF616161),
+        color: index == viewModel.currentSection
+            ? Colors.black
+            : const Color(0xFF616161),
       ),
     );
   }

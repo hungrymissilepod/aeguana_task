@@ -1,7 +1,9 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app_template/ui/views/dashboard/ui/app_bar_leading.dart';
 import 'package:flutter_app_template/ui/views/dashboard/ui/bottom_nav_bar_icon.dart';
 import 'package:flutter_app_template/ui/views/home/home_view.dart';
+import 'package:flutter_app_template/ui/views/pay/pay_view.dart';
 import 'package:stacked/stacked.dart';
 
 import 'dashboard_viewmodel.dart';
@@ -22,9 +24,15 @@ class DashboardView extends StackedView<DashboardViewModel> {
         centerTitle: true,
         elevation: 0,
         backgroundColor: const Color(0xFF349ED5),
-        title: const Text(
-          'Home',
-          style: TextStyle(
+        titleTextStyle: const TextStyle(
+          color: Color(0xFF0A0F0F),
+          fontWeight: FontWeight.w400,
+          fontSize: 18,
+        ),
+        leading: const AppBarLeading(),
+        title: Text(
+          viewModel.appBarTitle,
+          style: const TextStyle(
             fontFamily: 'Futura',
             fontSize: 16,
             fontWeight: FontWeight.w400,
@@ -36,7 +44,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
         controller: viewModel.controller,
         children: const <Widget>[
           HomeView(),
-          Center(child: Text('pay')),
+          PayView(),
           Center(child: Text('profile')),
         ],
         onPageChanged: (int index) {
@@ -74,9 +82,9 @@ class DashboardView extends StackedView<DashboardViewModel> {
             icon: BottomNavBarIcon(
               index: 2,
               currentIndex: viewModel.currentIndex,
-              icon: 'assets/home/profile_icon.png',
+              icon: 'assets/home/account_icon.png',
             ),
-            title: 'Profile',
+            title: 'Account',
             fontFamily: 'Futura',
           ),
         ],

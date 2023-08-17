@@ -61,8 +61,9 @@ class FoodTile extends StatelessWidget {
                                   fontSize: 14,
                                   fontFamily: 'Inter',
                                   color: const Color(0xFF111317),
-                                  decoration:
-                                      food.discountPrice == null ? TextDecoration.none : TextDecoration.lineThrough,
+                                  decoration: food.discountPrice == null
+                                      ? TextDecoration.none
+                                      : TextDecoration.lineThrough,
                                   overflow: TextOverflow.ellipsis,
                                 ),
                               ),

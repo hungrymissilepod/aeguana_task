@@ -15,8 +15,8 @@ class HomeView extends StackedView<HomeViewModel> {
     HomeViewModel viewModel,
     Widget? child,
   ) {
-    return Scaffold(
-      body: Column(
+    return Material(
+      child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           Padding(

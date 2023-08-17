@@ -34,7 +34,8 @@ class LaunchView extends StackedView<LaunchViewModel> {
           SafeArea(
             child: Center(
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 42),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 32, horizontal: 42),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -58,7 +59,8 @@ class LaunchView extends StackedView<LaunchViewModel> {
                     OutlinedButton(
                       onPressed: viewModel.navigateToDashboardView,
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(const Color(0xFF0D3144)),
+                        backgroundColor:
+                            MaterialStateProperty.all(const Color(0xFF0D3144)),
                         shape: MaterialStateProperty.all(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(100),

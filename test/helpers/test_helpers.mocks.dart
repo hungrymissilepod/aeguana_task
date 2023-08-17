@@ -797,8 +797,8 @@ class MockFoodService extends _i1.Mock implements _i9.FoodService {
         returnValueForMissingStub: <_i10.Food>[],
       ) as List<_i10.Food>);
   @override
-  List<_i10.Food> get snakcs => (super.noSuchMethod(
-        Invocation.getter(#snakcs),
+  List<_i10.Food> get snacks => (super.noSuchMethod(
+        Invocation.getter(#snacks),
         returnValue: <_i10.Food>[],
         returnValueForMissingStub: <_i10.Food>[],
       ) as List<_i10.Food>);

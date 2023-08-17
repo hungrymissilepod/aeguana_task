@@ -7,6 +7,7 @@ import 'package:flutter_app_template/services/dio_service.dart';
 import 'package:flutter_app_template/ui/views/dashboard/dashboard_view.dart';
 import 'package:flutter_app_template/services/food_service.dart';
 import 'package:flutter_app_template/ui/views/home/home_view.dart';
+import 'package:flutter_app_template/ui/views/pay/pay_view.dart';
 // @stacked-import
 
 @StackedApp(
@@ -15,6 +16,7 @@ import 'package:flutter_app_template/ui/views/home/home_view.dart';
     MaterialRoute(page: LoginView),
     MaterialRoute(page: DashboardView),
     MaterialRoute(page: HomeView),
+    MaterialRoute(page: PayView),
 // @stacked-route
   ],
   dependencies: [

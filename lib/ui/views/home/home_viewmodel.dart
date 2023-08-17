@@ -19,14 +19,16 @@ class HomeViewModel extends BaseViewModel {
 
   HomeViewModel(BuildContext context) {
     controller = AutoScrollController(
-      viewportBoundaryGetter: () => Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
+      viewportBoundaryGetter: () =>
+          Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
       axis: Axis.vertical,
     );
   }
 
   void scrollToSection(int index) async {
     currentSection = index;
-    await controller.scrollToIndex(currentSection, preferPosition: AutoScrollPosition.begin);
+    await controller.scrollToIndex(currentSection,
+        preferPosition: AutoScrollPosition.begin);
     controller.highlight(currentSection);
   }
 }
