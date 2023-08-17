@@ -8,11 +8,10 @@ import 'dart:ui' as _i6;
 
 import 'package:dio/dio.dart' as _i2;
 import 'package:flutter/material.dart' as _i4;
-import 'package:flutter_app_template/models/food_model.dart' as _i10;
-import 'package:flutter_app_template/services/authentication_service.dart'
-    as _i7;
-import 'package:flutter_app_template/services/dio_service.dart' as _i8;
-import 'package:flutter_app_template/services/food_service.dart' as _i9;
+import 'package:aeguana_task/models/food_model.dart' as _i10;
+import 'package:aeguana_task/services/authentication_service.dart' as _i7;
+import 'package:aeguana_task/services/dio_service.dart' as _i8;
+import 'package:aeguana_task/services/food_service.dart' as _i9;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:stacked_services/stacked_services.dart' as _i3;
 
@@ -54,8 +53,7 @@ class MockNavigationService extends _i1.Mock implements _i3.NavigationService {
         returnValueForMissingStub: '',
       ) as String);
   @override
-  _i4.GlobalKey<_i4.NavigatorState>? nestedNavigationKey(int? index) =>
-      (super.noSuchMethod(
+  _i4.GlobalKey<_i4.NavigatorState>? nestedNavigationKey(int? index) => (super.noSuchMethod(
         Invocation.method(
           #nestedNavigationKey,
           [index],
@@ -373,11 +371,9 @@ class MockNavigationService extends _i1.Mock implements _i3.NavigationService {
 /// A class which mocks [BottomSheetService].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockBottomSheetService extends _i1.Mock
-    implements _i3.BottomSheetService {
+class MockBottomSheetService extends _i1.Mock implements _i3.BottomSheetService {
   @override
-  void setCustomSheetBuilders(Map<dynamic, _i3.SheetBuilder>? builders) =>
-      super.noSuchMethod(
+  void setCustomSheetBuilders(Map<dynamic, _i3.SheetBuilder>? builders) => super.noSuchMethod(
         Invocation.method(
           #setCustomSheetBuilders,
           [builders],
@@ -417,8 +413,7 @@ class MockBottomSheetService extends _i1.Mock
           },
         ),
         returnValue: _i5.Future<_i3.SheetResponse<dynamic>?>.value(),
-        returnValueForMissingStub:
-            _i5.Future<_i3.SheetResponse<dynamic>?>.value(),
+        returnValueForMissingStub: _i5.Future<_i3.SheetResponse<dynamic>?>.value(),
       ) as _i5.Future<_i3.SheetResponse<dynamic>?>);
   @override
   _i5.Future<_i3.SheetResponse<T>?> showCustomSheet<T, R>({
@@ -480,8 +475,7 @@ class MockBottomSheetService extends _i1.Mock
         returnValueForMissingStub: _i5.Future<_i3.SheetResponse<T>?>.value(),
       ) as _i5.Future<_i3.SheetResponse<T>?>);
   @override
-  void completeSheet(_i3.SheetResponse<dynamic>? response) =>
-      super.noSuchMethod(
+  void completeSheet(_i3.SheetResponse<dynamic>? response) => super.noSuchMethod(
         Invocation.method(
           #completeSheet,
           [response],
@@ -495,9 +489,7 @@ class MockBottomSheetService extends _i1.Mock
 /// See the documentation for Mockito's code generation for more information.
 class MockDialogService extends _i1.Mock implements _i3.DialogService {
   @override
-  void registerCustomDialogBuilders(
-          Map<dynamic, _i3.DialogBuilder>? builders) =>
-      super.noSuchMethod(
+  void registerCustomDialogBuilders(Map<dynamic, _i3.DialogBuilder>? builders) => super.noSuchMethod(
         Invocation.method(
           #registerCustomDialogBuilders,
           [builders],
@@ -551,8 +543,7 @@ class MockDialogService extends _i1.Mock implements _i3.DialogService {
           },
         ),
         returnValue: _i5.Future<_i3.DialogResponse<dynamic>?>.value(),
-        returnValueForMissingStub:
-            _i5.Future<_i3.DialogResponse<dynamic>?>.value(),
+        returnValueForMissingStub: _i5.Future<_i3.DialogResponse<dynamic>?>.value(),
       ) as _i5.Future<_i3.DialogResponse<dynamic>?>);
   @override
   _i5.Future<_i3.DialogResponse<T>?> showCustomDialog<T, R>({
@@ -630,12 +621,10 @@ class MockDialogService extends _i1.Mock implements _i3.DialogService {
           },
         ),
         returnValue: _i5.Future<_i3.DialogResponse<dynamic>?>.value(),
-        returnValueForMissingStub:
-            _i5.Future<_i3.DialogResponse<dynamic>?>.value(),
+        returnValueForMissingStub: _i5.Future<_i3.DialogResponse<dynamic>?>.value(),
       ) as _i5.Future<_i3.DialogResponse<dynamic>?>);
   @override
-  void completeDialog(_i3.DialogResponse<dynamic>? response) =>
-      super.noSuchMethod(
+  void completeDialog(_i3.DialogResponse<dynamic>? response) => super.noSuchMethod(
         Invocation.method(
           #completeDialog,
           [response],
@@ -647,8 +636,7 @@ class MockDialogService extends _i1.Mock implements _i3.DialogService {
 /// A class which mocks [AuthenticationService].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockAuthenticationService extends _i1.Mock
-    implements _i7.AuthenticationService {
+class MockAuthenticationService extends _i1.Mock implements _i7.AuthenticationService {
   @override
   bool userLoggedIn() => (super.noSuchMethod(
         Invocation.method(
@@ -675,8 +663,7 @@ class MockDioService extends _i1.Mock implements _i8.DioService {
           [url],
           {#parameters: parameters},
         ),
-        returnValue:
-            _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
+        returnValue: _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
           this,
           Invocation.method(
             #get,
@@ -684,8 +671,7 @@ class MockDioService extends _i1.Mock implements _i8.DioService {
             {#parameters: parameters},
           ),
         )),
-        returnValueForMissingStub:
-            _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
+        returnValueForMissingStub: _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
           this,
           Invocation.method(
             #get,
@@ -705,8 +691,7 @@ class MockDioService extends _i1.Mock implements _i8.DioService {
           [url],
           {#parameters: parameters},
         ),
-        returnValue:
-            _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
+        returnValue: _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
           this,
           Invocation.method(
             #post,
@@ -714,8 +699,7 @@ class MockDioService extends _i1.Mock implements _i8.DioService {
             {#parameters: parameters},
           ),
         )),
-        returnValueForMissingStub:
-            _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
+        returnValueForMissingStub: _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
           this,
           Invocation.method(
             #post,
@@ -735,8 +719,7 @@ class MockDioService extends _i1.Mock implements _i8.DioService {
           [url],
           {#parameters: parameters},
         ),
-        returnValue:
-            _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
+        returnValue: _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
           this,
           Invocation.method(
             #put,
@@ -744,8 +727,7 @@ class MockDioService extends _i1.Mock implements _i8.DioService {
             {#parameters: parameters},
           ),
         )),
-        returnValueForMissingStub:
-            _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
+        returnValueForMissingStub: _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
           this,
           Invocation.method(
             #put,
@@ -765,8 +747,7 @@ class MockDioService extends _i1.Mock implements _i8.DioService {
           [url],
           {#parameters: parameters},
         ),
-        returnValue:
-            _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
+        returnValue: _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
           this,
           Invocation.method(
             #patch,
@@ -774,8 +755,7 @@ class MockDioService extends _i1.Mock implements _i8.DioService {
             {#parameters: parameters},
           ),
         )),
-        returnValueForMissingStub:
-            _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
+        returnValueForMissingStub: _i5.Future<_i2.Response<dynamic>>.value(_FakeResponse_0<dynamic>(
           this,
           Invocation.method(
             #patch,

@@ -1,5 +1,5 @@
+import 'package:aeguana_task/ui/views/launch/launch_textfield.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/ui/views/launch/launch_textfield.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:stacked/stacked.dart';
 
@@ -26,9 +26,10 @@ class LaunchView extends StackedView<LaunchViewModel> {
               child: FittedBox(
                 fit: BoxFit.fill,
                 child: Image(
-                    image: AssetImage(
-                  'assets/launch/launch_bubble.png',
-                )),
+                  image: AssetImage(
+                    'assets/launch/launch_bubble.png',
+                  ),
+                ),
               ),
             ),
           ),
@@ -37,6 +38,7 @@ class LaunchView extends StackedView<LaunchViewModel> {
             body: SafeArea(
               child: GestureDetector(
                 onTap: () => FocusScope.of(context).unfocus(),
+                behavior: HitTestBehavior.opaque,
                 child: Center(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 42),
@@ -58,11 +60,13 @@ class LaunchView extends StackedView<LaunchViewModel> {
                             LaunchTextField(
                               hint: 'Email',
                               keyboardType: TextInputType.emailAddress,
+                              textInputAction: TextInputAction.next,
                             ),
                             SizedBox(height: 10),
                             LaunchTextField(
                               hint: 'Password',
                               keyboardType: TextInputType.visiblePassword,
+                              textInputAction: TextInputAction.done,
                             ),
                             SizedBox(height: 26),
                           ],

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/models/food_model.dart';
+import 'package:aeguana_task/models/food_model.dart';
 
 class FoodTile extends StatelessWidget {
   const FoodTile({
@@ -61,9 +61,8 @@ class FoodTile extends StatelessWidget {
                                   fontSize: 14,
                                   fontFamily: 'Inter',
                                   color: const Color(0xFF111317),
-                                  decoration: food.discountPrice == null
-                                      ? TextDecoration.none
-                                      : TextDecoration.lineThrough,
+                                  decoration:
+                                      food.discountPrice == null ? TextDecoration.none : TextDecoration.lineThrough,
                                   overflow: TextOverflow.ellipsis,
                                 ),
                               ),

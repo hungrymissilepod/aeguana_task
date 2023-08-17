@@ -1,10 +1,10 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/ui/views/account/account_view.dart';
-import 'package:flutter_app_template/ui/views/dashboard/ui/app_bar_leading.dart';
-import 'package:flutter_app_template/ui/views/dashboard/ui/bottom_nav_bar_icon.dart';
-import 'package:flutter_app_template/ui/views/home/home_view.dart';
-import 'package:flutter_app_template/ui/views/pay/pay_view.dart';
+import 'package:aeguana_task/ui/views/account/account_view.dart';
+import 'package:aeguana_task/ui/views/dashboard/ui/app_bar_leading.dart';
+import 'package:aeguana_task/ui/views/dashboard/ui/bottom_nav_bar_icon.dart';
+import 'package:aeguana_task/ui/views/home/home_view.dart';
+import 'package:aeguana_task/ui/views/pay/pay_view.dart';
 import 'package:stacked/stacked.dart';
 
 import 'dashboard_viewmodel.dart';
@@ -62,7 +62,6 @@ class DashboardView extends StackedView<DashboardViewModel> {
               icon: 'assets/home/home_icon.png',
             ),
             title: 'Home',
-            fontFamily: 'Futura',
           ),
           TabItem(
             icon: BottomNavBarIcon(
@@ -71,7 +70,6 @@ class DashboardView extends StackedView<DashboardViewModel> {
               icon: 'assets/home/pay_icon.png',
             ),
             title: 'Pay',
-            fontFamily: 'Futura',
           ),
           TabItem(
             icon: BottomNavBarIcon(
@@ -80,7 +78,6 @@ class DashboardView extends StackedView<DashboardViewModel> {
               icon: 'assets/home/account_icon.png',
             ),
             title: 'Account',
-            fontFamily: 'Futura',
           ),
         ],
       ),

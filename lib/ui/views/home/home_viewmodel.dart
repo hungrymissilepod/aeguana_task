@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/app/app.locator.dart';
-import 'package:flutter_app_template/models/food_model.dart';
-import 'package:flutter_app_template/services/food_service.dart';
+import 'package:aeguana_task/app/app.locator.dart';
+import 'package:aeguana_task/models/food_model.dart';
+import 'package:aeguana_task/services/food_service.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:stacked/stacked.dart';
 
@@ -19,16 +19,14 @@ class HomeViewModel extends BaseViewModel {
 
   HomeViewModel(BuildContext context) {
     controller = AutoScrollController(
-      viewportBoundaryGetter: () =>
-          Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
+      viewportBoundaryGetter: () => Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
       axis: Axis.vertical,
     );
   }
 
   void scrollToSection(int index) async {
     currentSection = index;
-    await controller.scrollToIndex(currentSection,
-        preferPosition: AutoScrollPosition.begin);
+    await controller.scrollToIndex(currentSection, preferPosition: AutoScrollPosition.begin);
     controller.highlight(currentSection);
   }
 }

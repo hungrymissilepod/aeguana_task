@@ -1,5 +1,5 @@
-name: flutter_app_template
-description: A new Flutter project.
+name: aeguana_task
+description: Aeguana coding challenge by Jake King-Lee
 publish_to: 'none'
 version: 0.1.0
 
@@ -15,10 +15,6 @@ dependencies:
   logger: any
   flutter_dotenv: ^5.1.0
   hive: ^2.2.3
-  firebase_core: ^2.15.0
-  firebase_auth: ^4.7.1
-  firebase_analytics: ^10.4.4
-  firebase_crashlytics: ^3.3.4
   convex_bottom_bar: ^3.2.0
   vertical_scrollable_tabview: ^0.1.0
   scroll_to_index: ^3.0.1

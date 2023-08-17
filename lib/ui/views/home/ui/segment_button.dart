@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/ui/views/home/home_viewmodel.dart';
+import 'package:aeguana_task/ui/views/home/home_viewmodel.dart';
 import 'package:stacked/stacked.dart';
 
 class SegmentButton extends ViewModelWidget<HomeViewModel> {
@@ -17,12 +17,9 @@ class SegmentButton extends ViewModelWidget<HomeViewModel> {
     return Text(
       label,
       style: TextStyle(
-        fontFamily: 'Futura',
         fontSize: 14,
         fontWeight: FontWeight.w400,
-        color: index == viewModel.currentSection
-            ? Colors.black
-            : const Color(0xFF616161),
+        color: index == viewModel.currentSection ? Colors.black : const Color(0xFF616161),
       ),
     );
   }

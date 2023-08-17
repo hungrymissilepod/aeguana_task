@@ -1,4 +1,4 @@
-import 'package:flutter_app_template/models/food_model.dart';
+import 'package:aeguana_task/models/food_model.dart';
 
 List<Food> _meals = [
   const Food(

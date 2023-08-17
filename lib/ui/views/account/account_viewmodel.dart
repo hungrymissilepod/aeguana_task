@@ -1,5 +1,5 @@
-import 'package:flutter_app_template/app/app.locator.dart';
-import 'package:flutter_app_template/app/app.router.dart';
+import 'package:aeguana_task/app/app.locator.dart';
+import 'package:aeguana_task/app/app.router.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:stacked/stacked.dart';
 

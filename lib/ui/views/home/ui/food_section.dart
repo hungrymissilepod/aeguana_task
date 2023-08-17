@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/models/food_model.dart';
-import 'package:flutter_app_template/ui/views/home/ui/food_tile.dart';
+import 'package:aeguana_task/models/food_model.dart';
+import 'package:aeguana_task/ui/views/home/ui/food_tile.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 class FoodSection extends StatelessWidget {
@@ -32,7 +32,6 @@ class FoodSection extends StatelessWidget {
             Text(
               title,
               style: const TextStyle(
-                fontFamily: 'Futura',
                 fontSize: 18,
                 fontWeight: FontWeight.w400,
                 color: Color(0xFF333333),

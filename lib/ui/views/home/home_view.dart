@@ -1,6 +1,6 @@
 import 'package:custom_sliding_segmented_control/custom_sliding_segmented_control.dart';
-import 'package:flutter_app_template/ui/views/home/ui/food_section.dart';
-import 'package:flutter_app_template/ui/views/home/ui/segment_button.dart';
+import 'package:aeguana_task/ui/views/home/ui/food_section.dart';
+import 'package:aeguana_task/ui/views/home/ui/segment_button.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 

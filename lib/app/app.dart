@@ -1,14 +1,14 @@
-import 'package:flutter_app_template/ui/views/launch/launch_view.dart';
+import 'package:aeguana_task/ui/views/launch/launch_view.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
-import 'package:flutter_app_template/ui/views/login/login_view.dart';
-import 'package:flutter_app_template/services/authentication_service.dart';
-import 'package:flutter_app_template/services/dio_service.dart';
-import 'package:flutter_app_template/ui/views/dashboard/dashboard_view.dart';
-import 'package:flutter_app_template/services/food_service.dart';
-import 'package:flutter_app_template/ui/views/home/home_view.dart';
-import 'package:flutter_app_template/ui/views/pay/pay_view.dart';
-import 'package:flutter_app_template/ui/views/account/account_view.dart';
+import 'package:aeguana_task/ui/views/login/login_view.dart';
+import 'package:aeguana_task/services/authentication_service.dart';
+import 'package:aeguana_task/services/dio_service.dart';
+import 'package:aeguana_task/ui/views/dashboard/dashboard_view.dart';
+import 'package:aeguana_task/services/food_service.dart';
+import 'package:aeguana_task/ui/views/home/home_view.dart';
+import 'package:aeguana_task/ui/views/pay/pay_view.dart';
+import 'package:aeguana_task/ui/views/account/account_view.dart';
 // @stacked-import
 
 @StackedApp(

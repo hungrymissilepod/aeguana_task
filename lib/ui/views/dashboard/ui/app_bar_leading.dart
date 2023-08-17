@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/ui/views/dashboard/dashboard_viewmodel.dart';
+import 'package:aeguana_task/ui/views/dashboard/dashboard_viewmodel.dart';
 import 'package:stacked/stacked.dart';
 
 class AppBarLeading extends ViewModelWidget<DashboardViewModel> {
