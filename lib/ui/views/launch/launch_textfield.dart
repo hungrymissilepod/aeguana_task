@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeTextField extends StatelessWidget {
-  const HomeTextField({
+class LaunchTextField extends StatelessWidget {
+  const LaunchTextField({
     super.key,
     required this.hint,
   });

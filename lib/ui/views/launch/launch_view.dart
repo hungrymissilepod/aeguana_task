@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/ui/views/home/home_textfield.dart';
+import 'package:flutter_app_template/ui/views/launch/launch_textfield.dart';
 import 'package:stacked/stacked.dart';
 
-import 'home_viewmodel.dart';
+import 'launch_viewmodel.dart';
 
-class HomeView extends StackedView<HomeViewModel> {
-  const HomeView({Key? key}) : super(key: key);
+class LaunchView extends StackedView<LaunchViewModel> {
+  const LaunchView({Key? key}) : super(key: key);
 
   @override
   Widget builder(
     BuildContext context,
-    HomeViewModel viewModel,
+    LaunchViewModel viewModel,
     Widget? child,
   ) {
     return Scaffold(
@@ -49,9 +49,9 @@ class HomeView extends StackedView<HomeViewModel> {
                     const SizedBox(height: 16),
                     const Column(
                       children: [
-                        HomeTextField(hint: 'Email'),
+                        LaunchTextField(hint: 'Email'),
                         SizedBox(height: 10),
-                        HomeTextField(hint: 'Password'),
+                        LaunchTextField(hint: 'Password'),
                         SizedBox(height: 26),
                       ],
                     ),
@@ -116,8 +116,8 @@ class HomeView extends StackedView<HomeViewModel> {
   }
 
   @override
-  HomeViewModel viewModelBuilder(
+  LaunchViewModel viewModelBuilder(
     BuildContext context,
   ) =>
-      HomeViewModel();
+      LaunchViewModel();
 }
