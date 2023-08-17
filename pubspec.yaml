@@ -35,3 +35,19 @@ flutter:
 
   assets:
     - assets/
+
+  
+  fonts:
+    - family: Futura
+      fonts:
+        - asset: assets/fonts/Futura-Medium.ttf
+        - asset: assets/fonts/Futura-Heavy.ttf
+          weight: 700
+
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
+        - asset: assets/fonts/Raleway-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/Raleway-Light.ttf
+          weight: 300
