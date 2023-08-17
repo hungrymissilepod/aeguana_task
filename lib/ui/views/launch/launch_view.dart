@@ -26,7 +26,7 @@ class LaunchView extends StackedView<LaunchViewModel> {
                 fit: BoxFit.fill,
                 child: Image(
                     image: AssetImage(
-                  'assets/home_bubble.png',
+                  'assets/launch/launch_bubble.png',
                 )),
               ),
             ),
@@ -39,11 +39,11 @@ class LaunchView extends StackedView<LaunchViewModel> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     const Image(
-                      image: AssetImage('assets/aeguana_logo.png'),
+                      image: AssetImage('assets/launch/aeguana_logo.png'),
                     ),
                     const SizedBox(height: 16),
                     const Image(
-                      image: AssetImage('assets/home.png'),
+                      image: AssetImage('assets/launch/launch.png'),
                       height: 220,
                     ),
                     const SizedBox(height: 16),
@@ -56,7 +56,7 @@ class LaunchView extends StackedView<LaunchViewModel> {
                       ],
                     ),
                     OutlinedButton(
-                      onPressed: () {},
+                      onPressed: viewModel.navigateToDashboardView,
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(const Color(0xFF0D3144)),
                         shape: MaterialStateProperty.all(

@@ -4,6 +4,7 @@ import 'package:flutter_app_template/app/app.locator.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:flutter_app_template/services/authentication_service.dart';
 import 'package:flutter_app_template/services/dio_service.dart';
+import 'package:flutter_app_template/services/food_service.dart';
 // @stacked-import
 
 import 'test_helpers.mocks.dart';
@@ -14,6 +15,7 @@ import 'test_helpers.mocks.dart';
   MockSpec<DialogService>(onMissingStub: OnMissingStub.returnDefault),
   MockSpec<AuthenticationService>(onMissingStub: OnMissingStub.returnDefault),
   MockSpec<DioService>(onMissingStub: OnMissingStub.returnDefault),
+  MockSpec<FoodService>(onMissingStub: OnMissingStub.returnDefault),
 // @stacked-mock-spec
 ])
 void registerServices() {
@@ -22,6 +24,7 @@ void registerServices() {
   getAndRegisterDialogService();
   getAndRegisterAuthenticationService();
   getAndRegisterDioService();
+  getAndRegisterFoodService();
 // @stacked-mock-register
 }
 
@@ -86,6 +89,13 @@ MockDioService getAndRegisterDioService() {
   _removeRegistrationIfExists<DioService>();
   final service = MockDioService();
   locator.registerSingleton<DioService>(service);
+  return service;
+}
+
+MockFoodService getAndRegisterFoodService() {
+  _removeRegistrationIfExists<FoodService>();
+  final service = MockFoodService();
+  locator.registerSingleton<FoodService>(service);
   return service;
 }
 // @stacked-mock-create

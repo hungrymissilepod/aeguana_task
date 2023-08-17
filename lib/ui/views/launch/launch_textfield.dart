@@ -24,6 +24,12 @@ class LaunchTextField extends StatelessWidget {
             width: 2,
           ),
         ),
+        focusedBorder: const OutlineInputBorder(
+          borderSide: BorderSide(
+            color: Color(0xFF0D3144),
+            width: 2,
+          ),
+        ),
       ),
     );
   }

@@ -161,6 +161,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.1"
+  convex_bottom_bar:
+    dependency: "direct main"
+    description:
+      name: convex_bottom_bar
+      sha256: ebf0f3deb1e8e99374d844fee7485d2980ec502dedfaad395c12118477933aef
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.0"
   crypto:
     dependency: transitive
     description:
@@ -169,6 +177,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
+  custom_sliding_segmented_control:
+    dependency: "direct main"
+    description:
+      name: custom_sliding_segmented_control
+      sha256: a12d1908bb3fe06aabd4becd7def608cdd77b01b7a9f79e37d9414b478523a34
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.7.5"
   dart_style:
     dependency: transitive
     description:
@@ -185,6 +201,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.3.0"
+  equatable:
+    dependency: "direct main"
+    description:
+      name: equatable
+      sha256: c2b87cb7756efdf69892005af546c56c0b5037f54d2a88269b4f347a505e3ca2
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.5"
   fake_async:
     dependency: transitive
     description:
@@ -425,7 +449,7 @@ packages:
     source: hosted
     version: "4.8.1"
   json_serializable:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: json_serializable
       sha256: aa1f5a8912615733e0fdc7a02af03308933c93235bdc8d50d0b0c8a8ccb0b969
@@ -568,6 +592,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.1.0"
+  rect_getter:
+    dependency: transitive
+    description:
+      name: rect_getter
+      sha256: "1c71e4ab5fb7d83d2b14a8338f979bc9ae57eefba786e7fbc91f6746dac2193d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
+  scroll_to_index:
+    dependency: "direct main"
+    description:
+      name: scroll_to_index
+      sha256: b707546e7500d9f070d63e5acf74fd437ec7eeeb68d3412ef7b0afada0b4f176
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.1"
   shelf:
     dependency: transitive
     description:
@@ -733,6 +773,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  vertical_scrollable_tabview:
+    dependency: "direct main"
+    description:
+      name: vertical_scrollable_tabview
+      sha256: "9dd1237eaab4f05b335d77d3834a3968f4e756616700257a8baf8b2c546451cf"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.0"
   watcher:
     dependency: transitive
     description:

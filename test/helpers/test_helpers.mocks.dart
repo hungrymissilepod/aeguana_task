@@ -8,9 +8,11 @@ import 'dart:ui' as _i6;
 
 import 'package:dio/dio.dart' as _i2;
 import 'package:flutter/material.dart' as _i4;
+import 'package:flutter_app_template/models/food_model.dart' as _i10;
 import 'package:flutter_app_template/services/authentication_service.dart'
     as _i7;
 import 'package:flutter_app_template/services/dio_service.dart' as _i8;
+import 'package:flutter_app_template/services/food_service.dart' as _i9;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:stacked_services/stacked_services.dart' as _i3;
 
@@ -782,4 +784,34 @@ class MockDioService extends _i1.Mock implements _i8.DioService {
           ),
         )),
       ) as _i5.Future<_i2.Response<dynamic>>);
+}
+
+/// A class which mocks [FoodService].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockFoodService extends _i1.Mock implements _i9.FoodService {
+  @override
+  List<_i10.Food> get meals => (super.noSuchMethod(
+        Invocation.getter(#meals),
+        returnValue: <_i10.Food>[],
+        returnValueForMissingStub: <_i10.Food>[],
+      ) as List<_i10.Food>);
+  @override
+  List<_i10.Food> get snakcs => (super.noSuchMethod(
+        Invocation.getter(#snakcs),
+        returnValue: <_i10.Food>[],
+        returnValueForMissingStub: <_i10.Food>[],
+      ) as List<_i10.Food>);
+  @override
+  List<_i10.Food> get sweets => (super.noSuchMethod(
+        Invocation.getter(#sweets),
+        returnValue: <_i10.Food>[],
+        returnValueForMissingStub: <_i10.Food>[],
+      ) as List<_i10.Food>);
+  @override
+  List<_i10.Food> get drinks => (super.noSuchMethod(
+        Invocation.getter(#drinks),
+        returnValue: <_i10.Food>[],
+        returnValueForMissingStub: <_i10.Food>[],
+      ) as List<_i10.Food>);
 }
