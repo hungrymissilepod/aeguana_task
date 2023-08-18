@@ -64,6 +64,7 @@ class HomeView extends StackedView<HomeViewModel> {
             child: Container(
               color: kHomeViewBackgroundColor,
               child: ListView(
+                physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 controller: viewModel.controller,

@@ -38,6 +38,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
         ),
       ),
       body: PageView(
+        physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
         controller: viewModel.controller,
         children: const <Widget>[
           HomeView(),
