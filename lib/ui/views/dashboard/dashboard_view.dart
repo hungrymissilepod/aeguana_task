@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:aeguana_task/ui/views/account/account_view.dart';
@@ -19,19 +20,19 @@ class DashboardView extends StackedView<DashboardViewModel> {
     Widget? child,
   ) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF9F7F5),
+      backgroundColor: kBackgroundColor,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
         elevation: 0,
-        backgroundColor: const Color(0xFF349ED5),
+        backgroundColor: kAppBarColor,
         leading: const AppBarLeading(),
         title: Text(
           viewModel.appBarTitle,
           style: const TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w400,
-            color: Color(0xFF0A0F0F),
+            color: kNearBlack2Color,
           ),
         ),
       ),
@@ -51,8 +52,8 @@ class DashboardView extends StackedView<DashboardViewModel> {
           viewModel.onBottomNavBarTapped(index);
         },
         backgroundColor: Colors.white,
-        activeColor: const Color(0xFF0D3144),
-        color: const Color(0xFF808080),
+        activeColor: kPrimaryColor,
+        color: kBottomNavDisabledColor,
         style: TabStyle.fixed,
         items: [
           TabItem(

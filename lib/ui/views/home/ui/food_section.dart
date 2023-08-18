@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:aeguana_task/models/food_model.dart';
 import 'package:aeguana_task/ui/views/home/ui/food_tile.dart';
@@ -34,7 +35,7 @@ class FoodSection extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w400,
-                color: Color(0xFF333333),
+                color: kNearBlackColor,
               ),
             ),
             const SizedBox(height: 7),

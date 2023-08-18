@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBarIcon extends StatelessWidget {
@@ -17,9 +18,7 @@ class BottomNavBarIcon extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
       child: Image(
-        color: currentIndex == index
-            ? const Color(0xFF0D3144)
-            : const Color(0xFF808080),
+        color: currentIndex == index ? kPrimaryColor : kBottomNavDisabledColor,
         image: AssetImage(
           icon,
         ),

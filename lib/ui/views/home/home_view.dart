@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:custom_sliding_segmented_control/custom_sliding_segmented_control.dart';
 import 'package:aeguana_task/ui/views/home/ui/food_section.dart';
 import 'package:aeguana_task/ui/views/home/ui/segment_button.dart';
@@ -44,7 +45,7 @@ class HomeView extends StackedView<HomeViewModel> {
               },
               innerPadding: const EdgeInsets.all(4),
               decoration: BoxDecoration(
-                color: const Color(0xFFEBEBEB),
+                color: kHomeViewBackgroundColor,
                 borderRadius: BorderRadius.circular(100),
               ),
               thumbDecoration: BoxDecoration(
@@ -60,7 +61,7 @@ class HomeView extends StackedView<HomeViewModel> {
           ),
           Expanded(
             child: Container(
-              color: const Color(0xFFEBEBEB),
+              color: kHomeViewBackgroundColor,
               child: ListView(
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,

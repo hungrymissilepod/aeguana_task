@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:aeguana_task/ui/views/launch/launch_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
@@ -15,7 +16,7 @@ class LaunchView extends StackedView<LaunchViewModel> {
     Widget? child,
   ) {
     return Container(
-      color: const Color(0xFFF9F7F5),
+      color: kBackgroundColor,
       child: Stack(
         children: <Widget>[
           const Align(
@@ -74,11 +75,11 @@ class LaunchView extends StackedView<LaunchViewModel> {
                         OutlinedButton(
                           onPressed: viewModel.navigateToDashboardView,
                           style: OutlinedButton.styleFrom(
-                            backgroundColor: const Color(0xFF0D3144),
+                            backgroundColor: kPrimaryColor,
                             shape: const StadiumBorder(),
                             side: const BorderSide(
                               width: 2,
-                              color: Color(0xFF0D3144),
+                              color: kPrimaryColor,
                             ),
                           ),
                           child: const Padding(
@@ -108,7 +109,7 @@ class LaunchView extends StackedView<LaunchViewModel> {
                                     'Don\'t have an account?',
                                     style: TextStyle(
                                       fontFamily: 'Raleway',
-                                      color: Color(0xFF0A0F0F),
+                                      color: kNearBlack2Color,
                                       fontSize: 16,
                                       fontWeight: FontWeight.w300,
                                     ),

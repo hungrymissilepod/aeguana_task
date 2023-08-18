@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class LaunchTextField extends StatelessWidget {
@@ -25,14 +26,14 @@ class LaunchTextField extends StatelessWidget {
         enabledBorder: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(4)),
           borderSide: BorderSide(
-            color: Color(0xFFD4D4D4),
+            color: kTextFieldOutlineColor,
             width: 2,
           ),
         ),
         focusedBorder: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(4)),
           borderSide: BorderSide(
-            color: Color(0xFF0D3144),
+            color: kPrimaryColor,
             width: 2,
           ),
         ),

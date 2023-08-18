@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
@@ -14,7 +15,7 @@ class PayView extends StackedView<PayViewModel> {
   ) {
     return Material(
       child: Container(
-        color: const Color(0xFFD8D8D8),
+        color: kPayViewBackgroundColor,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -34,7 +35,7 @@ class PayView extends StackedView<PayViewModel> {
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 fontSize: 18,
-                color: Color(0xFF0A0F0F),
+                color: kNearBlack2Color,
               ),
             ),
           ],

@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
@@ -23,7 +24,7 @@ class AccountView extends StackedView<AccountViewModel> {
                 const Text(
                   'Hello, Jason!',
                   style: TextStyle(
-                    color: Color(0xFF333333),
+                    color: kNearBlackColor,
                     fontWeight: FontWeight.w400,
                     fontSize: 18,
                   ),
@@ -34,7 +35,7 @@ class AccountView extends StackedView<AccountViewModel> {
                     shape: const StadiumBorder(),
                     side: const BorderSide(
                       width: 2,
-                      color: Color(0xFF0D3144),
+                      color: kPrimaryColor,
                     ),
                   ),
                   child: const Padding(
@@ -44,7 +45,7 @@ class AccountView extends StackedView<AccountViewModel> {
                         Image(
                           height: 20,
                           image: AssetImage('assets/home/logout_icon.png'),
-                          color: Color(0xFF333333),
+                          color: kNearBlackColor,
                         ),
                         SizedBox(width: 10),
                         Text(
@@ -53,7 +54,7 @@ class AccountView extends StackedView<AccountViewModel> {
                             fontFamily: 'Raleway',
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
-                            color: Color(0xFF333333),
+                            color: kNearBlackColor,
                           ),
                         ),
                       ],

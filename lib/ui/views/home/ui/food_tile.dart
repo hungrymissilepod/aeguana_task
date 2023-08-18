@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:aeguana_task/models/food_model.dart';
 
@@ -47,7 +48,7 @@ class FoodTile extends StatelessWidget {
                             style: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w400,
-                              color: Color(0xFF333333),
+                              color: kNearBlackColor,
                               fontFamily: 'Raleway',
                               overflow: TextOverflow.ellipsis,
                             ),
@@ -60,7 +61,7 @@ class FoodTile extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 14,
                                   fontFamily: 'Inter',
-                                  color: const Color(0xFF111317),
+                                  color: kPriceColor,
                                   decoration:
                                       food.discountPrice == null ? TextDecoration.none : TextDecoration.lineThrough,
                                   overflow: TextOverflow.ellipsis,
@@ -74,7 +75,7 @@ class FoodTile extends StatelessWidget {
                                   style: const TextStyle(
                                     fontSize: 14,
                                     fontFamily: 'Inter',
-                                    color: Color(0xFFE22675),
+                                    color: kDiscountPriceColor,
                                     overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
@@ -93,7 +94,7 @@ class FoodTile extends StatelessWidget {
                         food.inStock
                             ? ClipOval(
                                 child: Material(
-                                  color: const Color(0xFF0D3144),
+                                  color: kPrimaryColor,
                                   child: InkWell(
                                     onTap: () {},
                                     child: const SizedBox(
@@ -114,7 +115,7 @@ class FoodTile extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Inter',
                                   fontSize: 16,
-                                  color: Color(0xFF686868),
+                                  color: kSoldOutColor,
                                 ),
                               ),
                       ],

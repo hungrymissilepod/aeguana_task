@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:aeguana_task/ui/views/home/home_viewmodel.dart';
 import 'package:stacked/stacked.dart';
@@ -19,7 +20,7 @@ class SegmentButton extends ViewModelWidget<HomeViewModel> {
       style: TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.w400,
-        color: index == viewModel.currentSection ? Colors.black : const Color(0xFF616161),
+        color: index == viewModel.currentSection ? Colors.black : ksegmentButtonDisabledColor,
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:aeguana_task/ui/views/dashboard/dashboard_viewmodel.dart';
 import 'package:stacked/stacked.dart';
@@ -22,7 +23,7 @@ class AppBarLeading extends ViewModelWidget<DashboardViewModel> {
                 child: Center(
                   child: Icon(
                     Icons.arrow_back_rounded,
-                    color: Color(0xFF0A0F0F),
+                    color: kNearBlack2Color,
                   ),
                 ),
               ),
