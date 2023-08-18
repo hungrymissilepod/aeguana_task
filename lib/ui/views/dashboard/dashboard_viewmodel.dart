@@ -1,3 +1,4 @@
+import 'package:aeguana_task/ui/common/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
@@ -8,13 +9,13 @@ class DashboardViewModel extends BaseViewModel {
   String get appBarTitle {
     switch (currentIndex) {
       case 0:
-        return 'Home';
+        return kAppBarHome;
       case 1:
-        return 'Scanning QR code';
+        return kAppBarPay;
       case 2:
-        return 'Account';
+        return kAppBarAccount;
       default:
-        return 'Home';
+        return kAppBarHome;
     }
   }
 
@@ -29,8 +30,7 @@ class DashboardViewModel extends BaseViewModel {
   }
 
   void _animateToPage() {
-    controller.animateToPage(currentIndex,
-        duration: const Duration(milliseconds: 200), curve: Curves.easeInOut);
+    controller.animateToPage(currentIndex, duration: const Duration(milliseconds: 200), curve: Curves.easeInOut);
     rebuildUi();
   }
 

@@ -1,4 +1,5 @@
 import 'package:aeguana_task/ui/common/app_colors.dart';
+import 'package:aeguana_task/ui/common/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:aeguana_task/models/food_model.dart';
 
@@ -111,7 +112,7 @@ class FoodTile extends StatelessWidget {
                                 ),
                               )
                             : const Text(
-                                'SOLD OUT',
+                                kSoldOut,
                                 style: TextStyle(
                                   fontFamily: 'Inter',
                                   fontSize: 16,

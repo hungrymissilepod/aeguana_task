@@ -1,4 +1,5 @@
 import 'package:aeguana_task/ui/common/app_colors.dart';
+import 'package:aeguana_task/ui/common/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
@@ -22,7 +23,7 @@ class AccountView extends StackedView<AccountViewModel> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 const Text(
-                  'Hello, Jason!',
+                  '$kAccountWelcome Jason!',
                   style: TextStyle(
                     color: kNearBlackColor,
                     fontWeight: FontWeight.w400,
@@ -49,7 +50,7 @@ class AccountView extends StackedView<AccountViewModel> {
                         ),
                         SizedBox(width: 10),
                         Text(
-                          'Log out',
+                          kLogout,
                           style: TextStyle(
                             fontFamily: 'Raleway',
                             fontSize: 16,

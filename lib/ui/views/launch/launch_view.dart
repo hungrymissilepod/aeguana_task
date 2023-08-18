@@ -1,4 +1,5 @@
 import 'package:aeguana_task/ui/common/app_colors.dart';
+import 'package:aeguana_task/ui/common/app_strings.dart';
 import 'package:aeguana_task/ui/views/launch/launch_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
@@ -59,13 +60,13 @@ class LaunchView extends StackedView<LaunchViewModel> {
                         const Column(
                           children: [
                             LaunchTextField(
-                              hint: 'Email',
+                              hint: kLaunchViewEmailHint,
                               keyboardType: TextInputType.emailAddress,
                               textInputAction: TextInputAction.next,
                             ),
                             SizedBox(height: 10),
                             LaunchTextField(
-                              hint: 'Password',
+                              hint: kLaunchViewPasswordHint,
                               keyboardType: TextInputType.visiblePassword,
                               textInputAction: TextInputAction.done,
                             ),
@@ -88,7 +89,7 @@ class LaunchView extends StackedView<LaunchViewModel> {
                               width: double.infinity,
                               child: Center(
                                 child: Text(
-                                  'Log in',
+                                  kLaunchViewCTAButton,
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -106,7 +107,7 @@ class LaunchView extends StackedView<LaunchViewModel> {
                               return Column(
                                 children: <Widget>[
                                   const Text(
-                                    'Don\'t have an account?',
+                                    kLaunchViewNoAccount,
                                     style: TextStyle(
                                       fontFamily: 'Raleway',
                                       color: kNearBlack2Color,
@@ -118,7 +119,7 @@ class LaunchView extends StackedView<LaunchViewModel> {
                                   TextButton(
                                     onPressed: () => viewModel.onSignUpTapped(),
                                     child: const Text(
-                                      'Sign up',
+                                      kLaunchViewSignUp,
                                       style: TextStyle(
                                         fontFamily: 'Raleway',
                                         color: Colors.white,

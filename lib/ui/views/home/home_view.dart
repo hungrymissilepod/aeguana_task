@@ -1,4 +1,5 @@
 import 'package:aeguana_task/ui/common/app_colors.dart';
+import 'package:aeguana_task/ui/common/app_strings.dart';
 import 'package:custom_sliding_segmented_control/custom_sliding_segmented_control.dart';
 import 'package:aeguana_task/ui/views/home/ui/food_section.dart';
 import 'package:aeguana_task/ui/views/home/ui/segment_button.dart';
@@ -28,19 +29,19 @@ class HomeView extends StackedView<HomeViewModel> {
               children: const {
                 0: SegmentButton(
                   index: 0,
-                  label: 'Meals',
+                  label: kMealsSegment,
                 ),
                 1: SegmentButton(
                   index: 1,
-                  label: 'Snacks',
+                  label: kSnacksSegment,
                 ),
                 2: SegmentButton(
                   index: 2,
-                  label: 'Sweets',
+                  label: kSweetsSegment,
                 ),
                 3: SegmentButton(
                   index: 3,
-                  label: 'Drinks',
+                  label: kDrinksSegment,
                 ),
               },
               innerPadding: const EdgeInsets.all(4),
@@ -70,25 +71,25 @@ class HomeView extends StackedView<HomeViewModel> {
                   FoodSection(
                     index: 0,
                     controller: viewModel.controller,
-                    title: 'Meals',
+                    title: kMealsSegment,
                     food: viewModel.meals,
                   ),
                   FoodSection(
                     index: 1,
                     controller: viewModel.controller,
-                    title: 'Snacks',
+                    title: kSnacksSegment,
                     food: viewModel.snakcs,
                   ),
                   FoodSection(
                     index: 2,
                     controller: viewModel.controller,
-                    title: 'Sweets',
+                    title: kSweetsSegment,
                     food: viewModel.sweets,
                   ),
                   FoodSection(
                     index: 3,
                     controller: viewModel.controller,
-                    title: 'Drinks',
+                    title: kDrinksSegment,
                     food: viewModel.drinks,
                   ),
                   const SizedBox(height: 40),

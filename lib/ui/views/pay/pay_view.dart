@@ -1,4 +1,5 @@
 import 'package:aeguana_task/ui/common/app_colors.dart';
+import 'package:aeguana_task/ui/common/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
@@ -31,7 +32,7 @@ class PayView extends StackedView<PayViewModel> {
             ),
             const SizedBox(height: 55),
             const Text(
-              'Scanning code...',
+              kScanningCode,
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 fontSize: 18,

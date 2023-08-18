@@ -1,4 +1,5 @@
 import 'package:aeguana_task/ui/common/app_colors.dart';
+import 'package:aeguana_task/ui/common/app_strings.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:aeguana_task/ui/views/account/account_view.dart';
@@ -62,7 +63,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
               currentIndex: viewModel.currentIndex,
               icon: 'assets/home/home_icon.png',
             ),
-            title: 'Home',
+            title: kBottomNavBarHome,
           ),
           TabItem(
             icon: BottomNavBarIcon(
@@ -70,7 +71,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
               currentIndex: viewModel.currentIndex,
               icon: 'assets/home/pay_icon.png',
             ),
-            title: 'Pay',
+            title: kBottomNavBarPay,
           ),
           TabItem(
             icon: BottomNavBarIcon(
@@ -78,7 +79,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
               currentIndex: viewModel.currentIndex,
               icon: 'assets/home/account_icon.png',
             ),
-            title: 'Account',
+            title: kBottomNavBarAccount,
           ),
         ],
       ),
